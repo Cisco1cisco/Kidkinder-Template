@@ -65,3 +65,156 @@ ul {
 
 /* Start Component */
 /* End Component */
+
+/* Start Header */
+
+header {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+@media (max-width: 991px) {
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .container .logo img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+header .container .logo span {
+    font-size: 50px;
+    color: var(--main-color, #17a2b8);
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+    header .container nav {
+        display: none;
+    }
+
+}
+
+header .container nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header .container nav ul li a,
+header .container nav ul li>div {
+    display: block;
+    padding: 25px 10px;
+    text-transform: capitalize;
+    color: var(--sec-color, #00394f);
+    font-weight: bold;
+}
+
+header .container nav ul li a:hover,
+header .container nav ul li>div:hover {
+    color: var(--main-color, #17a2b8);
+}
+
+header .container nav ul li a.active {
+    color: var(--main-color, #17a2b8);
+}
+
+header .container nav ul li div.min {
+    cursor: pointer;
+    position: relative;
+}
+
+header .container nav ul li div.min::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+header .container nav ul li div.min div {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: -10px;
+    background-color: white;
+    width: 130px;
+}
+
+header .container nav ul li div.min:hover div {
+    display: block;
+}
+
+
+header .container nav ul li div.min div a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    color: black;
+}
+
+header .container nav ul li div.min div a:hover {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+header .container nav ul li:last-of-type a {
+    background-color: var(--main-color, #17a2b8);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding: 15px 10px;
+    color: white;
+    transition: var(--trans-dur, .15s);
+    -webkit-transition: var(--trans-dur, .15s);
+    -moz-transition: var(--trans-dur, .15s);
+    -ms-transition: var(--trans-dur, .15s);
+    -o-transition: var(--trans-dur, .15s);
+}
+
+header .container nav ul li:last-of-type a:hover {
+    background-color: #138496;
+}
+
+header .container .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #dfe0e1;
+    padding: 14px 10px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+    header .container .menu {
+        display: flex;
+    }
+}
+
+header .container .menu span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #7c7c7d;
+    margin-bottom: 5px;
+}
+
+/* End Header */
