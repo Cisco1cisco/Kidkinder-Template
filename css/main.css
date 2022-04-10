@@ -65,7 +65,8 @@ ul {
 
 /* Start Component */
 
-.title h4.one {
+.title h4.one,
+.title.center h4 {
     color: var(--main-color, #17a2b8);
     font-weight: 500;
     font-size: 16px;
@@ -99,6 +100,38 @@ ul {
     .title h1 {
         font-size: 30px;
     }
+}
+
+.title.center {
+    text-align: center;
+}
+
+.title.center h4 {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.title.center h4::before,
+.title.center h4::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background-color: var(--main-color, #17a2b8);
+    width: 50px;
+    height: 2px;
+}
+
+.title.center h4::before {
+    left: -55px;
+}
+
+.title.center h4::after {
+    right: -55px;
 }
 
 a.button {
@@ -552,3 +585,100 @@ header .container .menu span {
 }
 
 /* End About Us */
+
+/* Start Classes */
+
+.classes {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.classes .container>.title {
+    margin-bottom: 40px;
+}
+
+.classes .container .classes-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .classes .container .classes-content {
+        flex-direction: column;
+    }
+}
+
+.classes .container .classes-content .class {
+    flex-basis: calc((100% / 3) - 30px);
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+@media (max-width: 991px) {
+    .classes .container .classes-content .class {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.classes .container .classes-content .class img {
+    max-width: 100%;
+}
+
+.classes .container .classes-content .class .sub-text {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #d9dadb;
+}
+
+.classes .container .classes-content .class .sub-text h4 {
+    font-size: 24px;
+    color: var(--sec-color, #00394f);
+    font-family: 'Handlee', cursive;
+    margin-bottom: 10px;
+}
+
+.classes .container .classes-content .class .sub-text p {
+    color: var(--parg-color, #666666);
+    line-height: 1.5;
+}
+
+.classes .container .classes-content .class .req {
+    padding: 30px;
+}
+
+.classes .container .classes-content .class .req .row {
+    display: flex;
+    justify-content: center;
+    color: var(--parg-color, #666666);
+}
+
+.classes .container .classes-content .class .req .row>.title {
+    font-weight: bold;
+    border-right: 1px solid #dee2e6;
+}
+
+.classes .container .classes-content .class .req .row>div {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+.classes .container .classes-content .class .req .row:not(div.row:last-of-type)>div {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.classes .container .classes-content .class a {
+    margin: 0 auto 20px;
+}
+
+/* End Classes */
