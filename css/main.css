@@ -71,6 +71,7 @@ ul {
     font-weight: 500;
     font-size: 16px;
     position: relative;
+    width: fit-content;
 }
 
 .title h4.one::after {
@@ -85,7 +86,7 @@ ul {
     background-color: var(--main-color, #17a2b8);
     width: 50px;
     height: 2px;
-    left: 145px;
+    right: -55px;
 }
 
 .title h1 {
@@ -107,7 +108,6 @@ ul {
 }
 
 .title.center h4 {
-    width: fit-content;
     margin: 0 auto;
 }
 
@@ -682,3 +682,149 @@ header .container .menu span {
 }
 
 /* End Classes */
+
+/* Start Book */
+
+.book {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.book .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .book .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.book .container .text {
+    width: 60%;
+}
+
+@media (max-width: 991px) {
+    .book .container .text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+.book .container .text p {
+    color: var(--parg-color, #666666);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.book .container .text ul {
+    margin-bottom: 10px;
+}
+
+.book .container .text ul li {
+    padding: 10px 0 10px 20px;
+    color: var(--parg-color, #666666);
+    position: relative;
+}
+
+.book .container .text ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    left: 0;
+    color: #28a745;
+}
+
+.book .container .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+@media (max-width: 991px) {
+    .book .container .form {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .book .container .form {
+        width: 100%;
+    }
+}
+
+.book .container .form h1 {
+    font-size: 39px;
+    color: white;
+    font-family: 'Handlee', cursive;
+    background-color: var(--sec-color, #00394f);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.book .container .form form {
+    background-color: var(--main-color, #17a2b8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.book .container .form form input,
+.book .container .form form select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.book .container .form form input:focus {
+    outline: none;
+}
+
+.book .container .form form button {
+    width: 80%;
+    border: none;
+    background-color: var(--sec-color, #00394f);
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    cursor: pointer;
+    transition: var(--trans-dur, 0.15s);
+    -webkit-transition: var(--trans-dur, 0.15s);
+    -moz-transition: var(--trans-dur, 0.15s);
+    -ms-transition: var(--trans-dur, 0.15s);
+    -o-transition: var(--trans-dur, 0.15s);
+}
+
+.book .container .form form button:hover {
+    background-color: #001d29;
+}
+
+/* End Book */
