@@ -828,3 +828,131 @@ header .container .menu span {
 }
 
 /* End Book */
+
+/* Start Teachers */
+
+.teachers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.teachers .container .title {
+    margin-bottom: 80px;
+}
+
+.teachers .container .teahcers-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .teachers .container .teahcers-content {
+        justify-content: center;
+    }
+}
+
+.teachers .container .teahcers-content .team {
+    flex-basis: calc((100% / 4) - 30px);
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .teachers .container .teahcers-content .team {
+        flex-basis: calc((100% / 2) - 30px);
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .teachers .container .teahcers-content .team {
+        flex-basis: 80%;
+    }
+}
+
+.teachers .container .teahcers-content .team .image {
+    position: relative;
+}
+
+.teachers .container .teahcers-content .team img {
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.teachers .container .teahcers-content .team .image .socials {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba(23, 162, 184, 0.8);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.teachers .container .teahcers-content .team:hover .image .socials {
+    z-index: 1;
+    opacity: 1;
+}
+
+.teachers .container .teahcers-content .team .image .socials .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: var(--trans-dur, .15s);
+    -webkit-transition: var(--trans-dur, .15s);
+    -moz-transition: var(--trans-dur, .15s);
+    -ms-transition: var(--trans-dur, .15s);
+    -o-transition: var(--trans-dur, .15s);
+}
+
+.teachers .container .teahcers-content .team .image .socials .icon:hover {
+    color: black;
+    background-color: white;
+}
+
+.teachers .container .teahcers-content .team h4 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: var(--sec-color, #00394f);
+    font-family: 'Handlee', cursive;
+}
+
+.teachers .container .teahcers-content .team span {
+    display: block;
+    margin-top: 15px;
+    color: var(--parg-color, #666666);
+    font-style: italic;
+}
+
+/* End Teachers */
