@@ -956,3 +956,113 @@ header .container .menu span {
 }
 
 /* End Teachers */
+
+/* Start Testimonial */
+
+.testimonial {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.testimonial .container .title {
+    margin-bottom: 40px;
+}
+
+.testimonial .container .test-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial .container .test-content .parent {
+    flex-basis: calc((100% / 3) - 30px);
+}
+
+@media (max-width: 991px) {
+    .testimonial .container .test-content .parent {
+        flex-basis: calc((100% / 2) - 30px);
+    }
+
+    .testimonial .container .test-content .parent:last-of-type {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial .container .test-content .parent {
+        flex-basis: 90%;
+        margin: auto;
+    }
+
+    .testimonial .container .test-content .parent:nth-child(2) {
+        display: none;
+    }
+}
+
+.testimonial .container .test-content .parent p {
+    background-color: #f8f9fa;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    padding: 25px;
+    color: var(--parg-color, #666666);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.testimonial .container .test-content .parent p i {
+    font-size: 30px;
+    color: var(--main-color, #17a2b8);
+    margin-right: 10px;
+}
+
+.testimonial .container .test-content .parent .name {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial .container .test-content .parent .name img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.testimonial .container .test-content .parent .name .text h5 {
+    font-size: 20px;
+    color: var(--sec-color, #00394f);
+    font-family: 'Handlee', cursive;
+    margin-bottom: 5px;
+}
+
+.testimonial .container .test-content .parent .name .text span {
+    color: var(--parg-color, #666666);
+    font-style: italic;
+}
+
+.testimonial .container nav {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial .container nav div {
+    width: 15px;
+    height: 15px;
+    background-color: #dddddd;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.testimonial .container nav div.active {
+    background-color: var(--main-color, #17a2b8);
+}
+
+/* End Testimonial */
