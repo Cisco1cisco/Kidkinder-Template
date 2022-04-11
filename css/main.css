@@ -1066,3 +1066,97 @@ header .container .menu span {
 }
 
 /* End Testimonial */
+
+/* Start Articales */
+
+.articales {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.articales .container .title {
+    margin-bottom: 40px;
+}
+
+.articales .container .artcial-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .articales .container .artcial-content {
+        justify-content: center;
+    }
+}
+
+.articales .container .artcial-content .blog {
+    flex-basis: calc((100% / 3) - 30px);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 991px) {
+    .articales .container .artcial-content .blog {
+        flex-basis: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .articales .container .artcial-content .blog {
+        flex-basis: 100%;
+    }
+}
+
+.articales .container .artcial-content .blog img {
+    width: 100%;
+}
+
+.articales .container .artcial-content .blog .head {
+    padding: 15px 0;
+}
+
+.articales .container .artcial-content .blog .head h4 {
+    font-size: 24px;
+    color: var(--sec-color, #00394f);
+    font-family: 'Handlee', cursive;
+}
+
+.articales .container .artcial-content .blog .head .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.articales .container .artcial-content .blog .head .icons .icon {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.articales .container .artcial-content .blog .head .icons .icon i {
+    margin-right: 5px;
+    color: var(--main-color, #17a2b8);
+}
+
+.articales .container .artcial-content .blog p {
+    padding: 10px 20px;
+    color: var(--parg-color, #666666);
+    line-height: 1.5;
+
+}
+
+.articales .container .artcial-content .blog a {
+    margin: 20px auto 30px;
+}
+
+/* End Articales */
