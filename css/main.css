@@ -1224,6 +1224,130 @@ header .container .menu span {
 
 /* End Articales */
 
+/* Start Gallery */
+
+.gallery {
+    padding-top: var(--section-padding, 50px);
+    padding-bottom: var(--section-padding, 50px);
+}
+
+.gallery .container nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.gallery .container nav div {
+    margin-right: 20px;
+    color: var(--main-color, #17a2b8);
+    text-transform: capitalize;
+    padding: 10px;
+    border: 1px solid var(--main-color, #17a2b8);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: var(--trans-dur, 0.15s);
+    -webkit-transition: var(--trans-dur, 0.15s);
+    -moz-transition: var(--trans-dur, 0.15s);
+    -ms-transition: var(--trans-dur, 0.15s);
+    -o-transition: var(--trans-dur, 0.15s);
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .gallery .container nav div {
+        margin-right: 10px;
+    }
+}
+
+.gallery .container nav div:hover {
+    background-color: var(--main-color, #17a2b8);
+    color: white;
+}
+
+.gallery .container nav div.active {
+    background-color: var(--main-color, #17a2b8);
+    color: white;
+    padding: 10px 15px;
+}
+
+.gallery .container .gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.gallery .container .gallery-content>div {
+    flex-basis: calc((100% / 3) - 30px);
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .gallery .container .gallery-content>div {
+        flex-basis: calc((100% / 2) - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery .container .gallery-content>div {
+        flex-basis: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery .container .gallery-content>div {
+        flex-basis: 90%;
+    }
+}
+
+.gallery .container .gallery-content>div::after {
+    content: "\2b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    background-color: var(--main-color, #17a2b8);
+    z-index: -1;
+    opacity: .5;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.gallery .container .gallery-content>div:hover:after {
+    z-index: 1;
+    opacity: 1;
+}
+
+.gallery .container .gallery-content>div img {
+    width: 100%;
+}
+
+/* End Gallery */
+
 /* Start Footer */
 
 footer {
