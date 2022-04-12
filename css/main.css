@@ -1160,3 +1160,201 @@ header .container .menu span {
 }
 
 /* End Articales */
+
+/* Start Footer */
+
+footer {
+    background-color: var(--sec-color, #00394f);
+}
+
+footer .container .up-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #054e64;
+}
+
+footer .container .up-section>div {
+    flex-basis: calc((100% / 4) - 30px);
+    margin-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+    footer .container .up-section>div {
+        flex-basis: calc((100% / 2) - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    footer .container .up-section>div {
+        flex-basis: 100%;
+    }
+}
+
+footer .container .up-section div.logo-main {
+    color: white;
+}
+
+footer .container .up-section div.logo-main .logo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer .container .up-section div.logo-main .logo img {
+    width: 40px;
+    margin-right: 5px;
+}
+
+footer .container .up-section div.logo-main .logo span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+footer .container .up-section div.logo-main p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+footer .container .up-section div.logo-main .socials .icon {
+    border: 1px solid var(--main-color, #17a2b8);
+    color: var(--main-color, #17a2b8);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: var(--trans-dur, 0.15s);
+    -webkit-transition: var(--trans-dur, 0.15s);
+    -moz-transition: var(--trans-dur, 0.15s);
+    -ms-transition: var(--trans-dur, 0.15s);
+    -o-transition: var(--trans-dur, 0.15s);
+}
+
+footer .container .up-section div.logo-main .socials .icon:hover {
+    background-color: var(--main-color, #17a2b8);
+    color: white;
+}
+
+footer .container .up-section h3 {
+    font-size: 28px;
+    color: var(--main-color, #17a2b8);
+    font-family: 'Handlee', cursive;
+    margin-bottom: 20px;
+}
+
+footer .container .up-section div.list li {
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer .container .up-section div.list:first-of-type li:nth-child(even) {
+    padding-left: 20px;
+}
+
+footer .container .up-section div.list li i {
+    font-size: 20px;
+    color: var(--main-color, #17a2b8);
+    margin-right: 10px;
+}
+
+footer .container .up-section div.list li>i+span {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Handlee', cursive;
+}
+
+footer .container .up-section div.list li a {
+    color: white;
+    text-transform: capitalize;
+    display: inline-block;
+    padding-left: 20px;
+    position: relative;
+}
+
+footer .container .up-section div.list li a:hover {
+    text-decoration: underline;
+}
+
+footer .container .up-section div.list li a::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    left: 0;
+}
+
+footer .container .up-section div.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .container .up-section div.form form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+}
+
+footer .container .up-section div.form form input:focus {
+    outline: none;
+}
+
+footer .container .up-section div.form form button {
+    background-color: var(--main-color, #17a2b8);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: var(--trans-dur, 0.15s);
+    -webkit-transition: var(--trans-dur, 0.15s);
+    -moz-transition: var(--trans-dur, 0.15s);
+    -ms-transition: var(--trans-dur, 0.15s);
+    -o-transition: var(--trans-dur, 0.15s);
+}
+
+footer .container .up-section div.form form button:hover {
+    background-color: #138496;
+}
+
+footer .container .down-section {
+    padding: 40px 0;
+}
+
+footer .container .down-section p {
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+
+footer .container .down-section p a {
+    color: var(--main-color, #17a2b8);
+    font-weight: bold;
+}
+
+/* End Footer */
