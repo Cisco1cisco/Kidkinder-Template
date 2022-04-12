@@ -157,12 +157,49 @@ a.button:hover {
     background-color: #138496;
 }
 
+.sub-section {
+    min-height: 400px;
+    background-color: var(--main-color, #17a2b8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-section .container h3 {
+    font-size: 69px;
+    font-family: 'Handlee', cursive;
+}
+
+@media (max-width: 768px) {
+    .sub-section .container h3 {
+        font-size: 50px;
+    }
+}
+
+.sub-section .container p a {
+    color: white;
+    margin-right: 10px;
+}
+
+.sub-section .container p a:hover {
+    text-decoration: underline;
+}
+
 /* End Component */
 
 /* Start Header */
 
 header {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    background-color: #f8f9fa;
 }
 
 @media (max-width: 991px) {
@@ -172,10 +209,26 @@ header {
     }
 }
 
+header.sub-page {
+    min-height: 100px;
+    position: relative;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header.sub-page .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 100%;
 }
 
 header .container .logo {
@@ -216,6 +269,11 @@ header .container nav ul li>div {
     font-weight: bold;
 }
 
+header.sub-page .container nav ul li a,
+header.sub-page .container nav ul li>div {
+    padding: 35px 10px;
+}
+
 header .container nav ul li a:hover,
 header .container nav ul li>div:hover {
     color: var(--main-color, #17a2b8);
@@ -243,6 +301,10 @@ header .container nav ul li div.min div {
     left: -10px;
     background-color: white;
     width: 130px;
+}
+
+header.sub-page .container nav ul li div.min div {
+    top: 90px;
 }
 
 header .container nav ul li div.min:hover div {
@@ -857,12 +919,12 @@ header .container .menu span {
 .teachers .container .teahcers-content .team {
     flex-basis: calc((100% / 4) - 30px);
     text-align: center;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 991px) {
     .teachers .container .teahcers-content .team {
         flex-basis: calc((100% / 2) - 30px);
-        margin-bottom: 40px;
     }
 }
 
