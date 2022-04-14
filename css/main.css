@@ -1222,6 +1222,47 @@ header .container .menu span {
     margin: 20px auto 30px;
 }
 
+.articales .container nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articales .container nav div {
+    border: 1px solid #ebeef0;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: var(--main-color, #17a2b8);
+    transition: var(--trans-dur, 0.15s);
+    -webkit-transition: var(--trans-dur, 0.15s);
+    -moz-transition: var(--trans-dur, 0.15s);
+    -ms-transition: var(--trans-dur, 0.15s);
+    -o-transition: var(--trans-dur, 0.15s);
+}
+
+.articales .container nav div:not(div.active):hover {
+    background-color: #e9ecef;
+}
+
+.articales .container nav div.active {
+    background-color: var(--main-color, #17a2b8);
+    color: white;
+}
+
+.articales .container nav div:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.articales .container nav div:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.articales .container nav div i {
+    font-size: 10px;
+}
+
 /* End Articales */
 
 /* Start Blog-Detail */
@@ -1901,6 +1942,145 @@ header .container .menu span {
 }
 
 /* End Gallery */
+
+/* Start Contact */
+
+.contact {
+    padding-top: var(--section-padding, 50px);
+    padding-bottom: var(--section-padding, 50px);
+}
+
+.contact .container .contact-cont {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .contact .container .contact-cont {
+        flex-direction: column;
+    }
+}
+
+.contact .container .contact-cont .form {
+    width: 60%;
+}
+
+@media (max-width: 991px) {
+    .contact .container .contact-cont .form {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+.contact .container .contact-cont .form form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.contact .container .contact-cont .form form input,
+.contact .container .contact-cont .form form textarea {
+    width: 100%;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact .container .contact-cont .form form input:focus,
+.contact .container .contact-cont .form form textarea:focus {
+    outline: none;
+    border-color: #63d9ec;
+    box-shadow: 0 0 0 0.2rem rgb(23 162 184 / 25%);
+}
+
+.contact .container .contact-cont .form form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact .container .contact-cont .form form button {
+    width: fit-content;
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--main-color, #17a2b8);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: var(--trans-dur, 0.15s);
+    -webkit-transition: var(--trans-dur, 0.15s);
+    -moz-transition: var(--trans-dur, 0.15s);
+    -ms-transition: var(--trans-dur, 0.15s);
+    -o-transition: var(--trans-dur, 0.15s);
+    cursor: pointer;
+}
+
+.contact .container .contact-cont .form form button:hover {
+    background-color: #138496;
+}
+
+.contact .container .contact-cont .text {
+    width: 35%;
+}
+
+@media (max-width: 991px) {
+    .contact .container .contact-cont .text {
+        width: 100%;
+    }
+}
+
+.contact .container .contact-cont .text p {
+    color: var(--parg-color, #666666);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.contact .container .contact-cont .text div.info {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact .container .contact-cont .text div.info .icon {
+    background-color: var(--main-color, #17a2b8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: var(--sec-color, #00394f);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .container .contact-cont .text div.info .cont h5 {
+    font-size: 20px;
+    font-family: 'Handlee', cursive;
+    color: var(--sec-color, #00394f);
+}
+
+.contact .container .contact-cont .text div.info .cont p {
+    color: var(--parg-color, #666666);
+}
+
+.contact .container .contact-cont .text div.info .cont p span::after {
+    content: "\a";
+    white-space: pre;
+}
+
+/* End Contact */
 
 /* Start Footer */
 
